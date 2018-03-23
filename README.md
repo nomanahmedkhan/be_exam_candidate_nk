@@ -17,7 +17,8 @@ This repo contains an exercise intended for Back-End Engineers.
 1. Update within the Test.java file whereever the directories are to be created, for my program they have been created on my desktop.
 2. You will need to install and add External JAR files that were implemented within this program. They are 
    jackson-databind, jackson-core, jackson-annotations. They can be downloaded from Jackson API Search website. 
-3. Compile the Program and then execute.
+3. Run the Test.java file (this is the program file with main method, not to be mistaken with any unit test or integration test).
+
 
 ## Assumptions
 1. Tried my best to implement most of the requirements of the Assignment. However I was not able to get the JSON format exactly the same as
