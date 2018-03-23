@@ -27,7 +27,7 @@ public class Test{
 		/**
 		 * to get all the files from directory and store it in an array	
 		 */
-		File dir = new File("C:\\Users\\noman\\Desktop\\input-directory");
+		File dir = new File("C:\\Users\\noman\\Desktop\\input-directory"); //UPDATE DIRECTORY
 		  File[] directoryListing = dir.listFiles();
 		  
 		  if (directoryListing != null) { 
@@ -47,7 +47,8 @@ public class Test{
 				try (LineNumberReader in = new LineNumberReader(new FileReader(child));){
 					 
 					//create an error file 
-					try(BufferedWriter errorFile = new BufferedWriter(new FileWriter(new File("C:\\Users\\noman\\Desktop\\error-directory\\"+child.getName())))){
+					//UPDATE DIRECTORY
+					try(BufferedWriter errorFile = new BufferedWriter(new FileWriter(new File("C:\\Users\\noman\\Desktop\\error-directory\\"+child.getName())))){ 
 						 
 						 //headers for the error csv file
 						 try {
@@ -96,7 +97,9 @@ public class Test{
 					 */
 				    ObjectMapper mapper = new ObjectMapper();
 				    mapper.enable(SerializationFeature.INDENT_OUTPUT);
-				    mapper.writeValue(new File("C:\\Users\\noman\\Desktop\\output-directory\\"+child.getName().replaceFirst("\\.csv$","")+".json"), person);
+				    
+				    //UPDATE DIRECTORY
+				    mapper.writeValue(new File("C:\\Users\\noman\\Desktop\\output-directory\\"+child.getName().replaceFirst("\\.csv$","")+".json"), person); 
 				    
 				    //add the file to the processed ArrayList
 				    processedFiles.add(child);
