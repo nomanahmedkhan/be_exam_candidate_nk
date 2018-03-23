@@ -20,8 +20,11 @@ This repo contains an exercise intended for Back-End Engineers.
 3. Compile the Program and then execute.
 
 ## Assumptions
-Tried my best to implement most of the requirements of the Assignment. However I was not able to get the JSON format exactly the same as
+1. Tried my best to implement most of the requirements of the Assignment. However I was not able to get the JSON format exactly the same as
 it was mentioned, but most of the program runs as it was supposed to. 
+
+2. The program runs in a local environment, it was not created to be used over server. 
+
 
 
 
